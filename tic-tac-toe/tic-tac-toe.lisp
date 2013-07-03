@@ -5,7 +5,7 @@
 (defclass ttt-window (glut:window)
   ()
   (:default-initargs :width 600 :height 600 :title "tic-tac-toe.lisp"
-		     :mode '(:double :rgb)))
+		     :mode '(:double :rgba)))
 
 (defmethod glut:display-window :before ((window ttt-window))
   ;; Good spot for initial OpenGL setup
@@ -18,7 +18,7 @@
 
 (defmethod glut:display ((window ttt-window))
   (gl:clear :color-buffer)
-  (gl:color 1 1 1)
+  (gl:color 1 1 1 1)
   (gl:with-primitive :lines
     (gl:vertex 33 0)
     (gl:vertex 33 100))
