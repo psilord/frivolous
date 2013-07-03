@@ -3,9 +3,20 @@
 (in-package #:tic-tac-toe)
 
 (defclass ttt-window (glut:window)
-  ()
-  (:default-initargs :width 600 :height 600 :title "tic-tac-toe.lisp"
-		     :mode '(:double :rgba)))
+  ())
+
+;; In CLOS, object constructors are often done like this to hide the
+;; MAKE-INSTANCE call. This finishes the abstraction of the ttt-window
+;; protocol.  One could use &rest here and apply the MAKE-INSTANCE to
+;; the list of keys, but the way I rendered it here seperates the API
+;; of how to construct an object from MAKE-INSTANCE's implementation.
+;; Also, object construction might be more complex than just a single
+;; call to MAKE-INSTANCE, for example it could require manipulating
+;; the object after it is constructed to finish the construction.
+(defun make-ttt-window (&key (width 600) (height 600)
+                        (title "tic-tac-toe.lisp") (mode '(:double :rgba)))
+  (make-instance 'ttt-window
+                 :width width :height height :title title :mode mode))
 
 (defmethod glut:display-window :before ((window ttt-window))
   ;; Good spot for initial OpenGL setup
@@ -57,5 +68,5 @@
        (force-output *query-io*)))))
 
 (defun main ()
-  (glut:display-window (make-instance 'ttt-window)))
-   
+  (glut:display-window (make-ttt-window)))
+
