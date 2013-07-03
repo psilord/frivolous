@@ -1,0 +1,12 @@
+This is a template directory for the ease of setting up a new lispbuilder-sdl
+and opengl project quickly.
+
+How to use:
+
+Copy this directory to a new name.
+
+Rename all strings (found in file names and in the files themselves)
+of 'opengl-template' to whatever the new project name is. Fix the
+asd file's copyright and description information. 
+
+Commit.
