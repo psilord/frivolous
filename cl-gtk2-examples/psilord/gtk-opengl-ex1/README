@@ -6,3 +6,8 @@
 ;; $HOME/quicklisp/dists/quicklisp/software/cl-gtk2-20120909-git/gtk-glext
 ;; and ensure the date is correct for your release of quicklisp.
 
+;; To run:
+
+(asdf:load-system :gtk-opengl-ex1)
+(in-package :gtk-opengl-ex1)
+(when * (main))

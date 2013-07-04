@@ -115,7 +115,7 @@
     (dolist (mask masks)
       (pushnew mask (gdk:gdk-window-events (gtk:widget-window widget))))))
 
-(defun doit ()
+(defun main ()
   (let (top-level)
     (gtk:within-main-loop
       (let ((builder (make-instance 'gtk:builder))
