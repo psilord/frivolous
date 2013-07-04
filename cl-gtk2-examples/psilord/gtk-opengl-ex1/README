@@ -1,0 +1,8 @@
+;; To deal with cl-gtk2-gtkglext, I had to manually add the path to
+;; the asd file to my systems path and manually ask quicklisp to load
+;; it. Apparently it doesn't build by default and it is turned off in
+;; the quicklisp index. This means that in your ~quicklisp/local-projects
+;; directory, make a symlink called gtk-glext to 
+;; $HOME/quicklisp/dists/quicklisp/software/cl-gtk2-20120909-git/gtk-glext
+;; and ensure the date is correct for your release of quicklisp.
+
