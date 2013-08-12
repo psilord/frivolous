@@ -4,5 +4,6 @@ http://nocash.emubase.de/gbatek.htm
 datasheets/
 	contains various CPU data sheets
 
-
+games/
+	A couple of random games to test the emulator and our tools.
 
