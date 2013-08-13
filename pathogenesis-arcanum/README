@@ -1,4 +1,20 @@
 This is the project "Pathogenesis Arcanum".
 
 A game about world domination, asassination, virii, and the nanosized
-robots that make it all possible.
+robots that make it all possible. It is a schmup on a sphere.
+
+The gist of the storyline is that you are controlling a nano robot. It is
+hovering around/over different particles like amino acids, etc, and the body is
+trying to destroy it what you are protecting/assembling. You have to destroy
+the offenses the body sends against you, but then capture suitable pieces from
+the destruction and assemble the virii/cancer cell/etc in the process. If you
+fuck up, pieces can get blown off and you have to acquire them again.
+
+You start off making virii or something, but keep working your way up in size
+until you get to entire cells or greater. Different backdrops at that scale
+could be cool looking. You're generally in a fluid, so things can go whizzing
+by.  If you're protecting a cell, you can see it dividing as the time in the
+level progresses and you're able to feed it the right chemicals and protect it
+from the body's defenses.
+
+You have repulsors, attractors, weapons, shields, the usual.
