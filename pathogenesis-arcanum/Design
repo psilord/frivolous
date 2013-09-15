@@ -1,0 +1,90 @@
+Overview
+========
+
+The game consists of a Main Menu which takes one to a couple of configure
+menus.  If the user chooses Start, they start the first level of the game.  The
+game consists of 3 levels, each about a ten minute experience. 
+
+The first level is split into two conceptual halves. The first half is
+assembling a virus protein coat, the second is the RNA which encodes the virus.
+Attacks by enemies degrade the protein coat and it must be repaired by the
+player in addition to completing it. The protein coat can be degraded to
+nothing and then it is as if the player started the game anew. When the protein
+coat is finished, the player begins to assemble the RNA that goes inside of it.
+Enemy attacks only degrade the protein cost, which must also be repaired while
+assembling the RNA strand. When the RNA strand and protein coat are finished,
+the level ends.
+
+The second level is split into two conceptual pieces. The first half is
+protecting the virus while it invades a single cell. Enemies are attacking the
+virus and the cell itself that is being attacked in order to destroy it.  You
+must protect the cell and the virus. The cell regenerates if it can be defended
+well. If the virus is knocked off by antibodies, the level effectively starts
+over.  Protecting the virus from being hit allows it to solidify its attempt at
+entering the cell and it can survive some attacks during that time. The level
+ends when the virus sucessfully infects the cell and 1 minute of very frantic
+attacks can be defended while the cell begins dividing.
+
+The third level is split into two conceptual pieces. The first half is
+physically dragging the cancer cell ball through the fluid medium towards the
+pancreas. White blood cells and other body defenses slip through the walls of
+the lymph vessls trying to destroy the cells. Once the pancreas is reached the
+second half of the level is a boss fight. There is a lymph node just on the
+outside of the pancreas that must be infected with cancer and defeated.  The
+boss opens up portals on itself from which white blood cells and other such
+things spill out. The player can "launch" cancer cells away from the ball
+(which shrink it, but it regenerates by redividing, however if all cells are
+used or destroyed by the body, the level is over and the player loses).  If the
+player manages to launch cancer cells so they wedge into the portals before the
+whiteblood cells come out, then the cancer metastasizes into the lymph, weakens
+it, and kills it. When the boss dies, you win the level and enter the pancreas. 
+
+End of game.
+
+Requirements
+============
+
+	The game may use as input:
+		Joystick
+		Gamepad
+		Keyboard
+
+	The game plays audio:
+		A background sound track
+		Sound effects
+	
+	All graphics and sounds for the game are included in the game.
+
+	The game targets opengl 2.1.
+
+Program Start
+=============
+
+User runs the program at the command line.
+
+Main Menu
+==========
+
+A Main Menu screen fades in. The background of the game is a closeup
+of viruses with an electron microscope:
+
+http://en.wikipedia.org/wiki/File:Phage.jpg
+
+In fact, we could even use that image due to advantageous copyright.
+
+The title of the game is in large font across the top:
+
+                     Pathogenesis Arcanum
+
+Then there is a menu in a smaller font underneath it:
+
+                        Start
+                        Controls
+						Options
+
+Under that in a yet smaller font, are credits:
+
+			Created by:
+				Mick Beaver (charles.m.beaver@gmail.com)
+				Peter Keller (psilord@cs.wisc.edu)
+
